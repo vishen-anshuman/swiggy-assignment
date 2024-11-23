@@ -4,7 +4,7 @@ import java.io.IOException;
 
 public class Game {
     public static void main(String[] args) {
-        String filePath = "player_test_cases_updated.txt";
+        String filePath = "src/player_test_cases_updated.txt";
         try (BufferedReader reader = new BufferedReader(new FileReader(filePath))) {
             String line;
             while ((line = reader.readLine()) != null) {

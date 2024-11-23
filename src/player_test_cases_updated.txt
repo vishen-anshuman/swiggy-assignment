@@ -1,0 +1,10 @@
+PlayerA: Name: Warrior, Health: 100, Strength: 40, Attack: 50; PlayerB: Name: Mage, Health: 80, Strength: 30, Attack: 70
+PlayerA: Name: Knight, Health: 120, Strength: 50, Attack: 40; PlayerB: Name: Archer, Health: 90, Strength: 35, Attack: 60
+PlayerA: Name: Barbarian, Health: 110, Strength: 60, Attack: 70; PlayerB: Name: Assassin, Health: 85, Strength: 25, Attack: 80
+PlayerA: Name: Paladin, Health: 150, Strength: 70, Attack: 35; PlayerB: Name: Sorcerer, Health: 100, Strength: 45, Attack: 65
+PlayerA: Name: Gladiator, Health: 130, Strength: 50, Attack: 55; PlayerB: Name: Ranger, Health: 95, Strength: 40, Attack: 60
+PlayerA: Name: Berserker, Health: 140, Strength: 80, Attack: 75; PlayerB: Name: Rogue, Health: 80, Strength: 25, Attack: 85
+PlayerA: Name: Monk, Health: 110, Strength: 60, Attack: 45; PlayerB: Name: Warlock, Health: 100, Strength: 30, Attack: 70
+PlayerA: Name: Samurai, Health: 120, Strength: 55, Attack: 60; PlayerB: Name: Ninja, Health: 90, Strength: 20, Attack: 80
+PlayerA: Name: Druid, Health: 100, Strength: 50, Attack: 50; PlayerB: Name: Necromancer, Health: 85, Strength: 40, Attack: 75
+PlayerA: Name: Viking, Health: 140, Strength: 65, Attack: 65; PlayerB: Name: Thief, Health: 90, Strength: 35, Attack: 70
