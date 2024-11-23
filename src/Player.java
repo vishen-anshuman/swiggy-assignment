@@ -1,12 +1,17 @@
 public class Player {
+    private final String name;
     private int health;
-    private int strength;
-    private int attack;
+    private final int strength;
+    private final int attack;
 
-    private Player(Builder builder) {
+    private Player( Builder builder) {
+        this.name = builder.name;
         this.health = builder.health;
         this.strength = builder.strength;
         this.attack = builder.attack;
+    }
+    public String getName() {
+        return name;
     }
 
     public int getHealth() {
@@ -21,25 +26,11 @@ public class Player {
         return attack;
     }
 
-    public void setHealth(int health) {
+    public void setHealthAfterDamage(int damage) throws Exception{
+        this.health -= damage;
         if (health <= 0) {
-            throw new IllegalArgumentException("Health must be a positive integer.");
+            throw new Exception("Health must be a positive integer.");
         }
-        this.health = health;
-    }
-
-    public void setStrength(int strength) {
-        if (strength <= 0) {
-            throw new IllegalArgumentException("Strength must be a positive integer.");
-        }
-        this.strength = strength;
-    }
-
-    public void setAttack(int attack) {
-        if (attack <= 0) {
-            throw new IllegalArgumentException("Attack must be a positive integer.");
-        }
-        this.attack = attack;
     }
 
     @Override
@@ -52,6 +43,7 @@ public class Player {
     }
 
     public static class Builder {
+        public String name;
         private int health;
         private int strength;
         private int attack;
@@ -80,7 +72,13 @@ public class Player {
             return this;
         }
 
-        public Player build() {
+
+        public Builder name(String name) {
+            this.name = name;
+            return this;
+        }
+
+        public Player build(){
             return new Player(this);
         }
     }
