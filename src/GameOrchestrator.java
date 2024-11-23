@@ -7,11 +7,11 @@ public class GameOrchestrator {
         return startBattle(attacker, defender);
     }
 
-    private static Player determineInitialAttacker(Player playerA, Player playerB) {
+    static Player determineInitialAttacker(Player playerA, Player playerB) {
         return (playerA.getHealth() < playerB.getHealth()) ? playerA : playerB;
     }
 
-    private static Player startBattle(Player attacker, Player defender) {
+    static Player startBattle(Player attacker, Player defender) {
         while (true) {
             int attackRoll = GameUtils.getDiceRoll();
             int defendRoll = GameUtils.getDiceRoll();
